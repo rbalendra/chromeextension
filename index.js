@@ -8,7 +8,8 @@ const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
 
 if (leadsFromLocalStorage) {
-    myLeads = leadsFromLocalStorage
+    //line above checks if the leadsFromLocalStorage is truthy 
+    myLeads = leadsFromLocalStorage 
     render(myLeads)
 }
 
